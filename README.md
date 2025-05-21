@@ -1,75 +1,88 @@
-﻿# atividade-30pts
-📘 Atividade 30PTS - Int. Tec. Informação
-🎯 Objetivo do Projeto
-Este projeto tem como objetivo servir uma página HTML simples utilizando o servidor web NGINX dentro de um container Docker.
-A atividade foi desenvolvida para a disciplina de Introdução à Tecnologia da Informação.
+# 📘 Atividade 30PTS - Int. Tec. Informação
 
-🛠️ Comandos Utilizados
-📦 Criar a imagem Docker personalizada
-bash
-Copiar
-Editar
+## 🎯 Objetivo do Projeto
+
+Este projeto tem como objetivo servir uma página HTML simples utilizando o servidor web **NGINX** dentro de um container **Docker**.  
+A atividade foi desenvolvida para a disciplina de **Introdução à Tecnologia da Informação**.
+
+---
+
+## 🛠️ Comandos Utilizados
+
+### 📦 Criar a imagem Docker personalizada
+
+```bash
 docker build -t atividade .
-🚀 Executar o container
-bash
-Copiar
-Editar
+```
+
+### 🚀 Executar o container
+
+```bash
 docker run -d -p 8080:80 --name atividade-ngix atividade
-📋 Verificar containers ativos
-bash
-Copiar
-Editar
+```
+
+### 📋 Verificar containers ativos
+
+```bash
 docker ps
-🛑 Parar o container
-bash
-Copiar
-Editar
+```
+
+### 🛑 Parar o container
+
+```bash
 docker stop atividade-ngix
-🗑️ Remover o container
-bash
-Copiar
-Editar
+```
+
+### 🗑️ Remover o container
+
+```bash
 docker rm atividade-ngix
-📜 Ver logs do container
-bash
-Copiar
-Editar
+```
+
+### 📜 Ver logs do container
+
+```bash
 docker logs atividade-ngix
-▶️ Como Executar o Container
-Certifique-se de estar no diretório onde estão os arquivos:
+```
 
-index.html
+---
 
-style.css
+## ▶️ Como Executar o Container
 
-Dockerfile
+1. Certifique-se de estar no diretório onde estão os arquivos:
 
-(opcional) pasta assets/ com imagens
+```
+index.html  
+style.css  
+Dockerfile  
+assets/ (opcional, para imagens)  
+```
 
-Construa a imagem Docker:
+2. Construa a imagem Docker:
 
-bash
-Copiar
-Editar
+```bash
 docker build -t atividade .
-Rode o container:
+```
 
-bash
-Copiar
-Editar
+3. Rode o container:
+
+```bash
 docker run -d -p 8080:80 --name atividade-ngix atividade
-Acesse o projeto no navegador:
+```
 
-arduino
-Copiar
-Editar
+4. Acesse o projeto no navegador:
+
+```
 http://localhost:8080
+```
+
 Você verá a página HTML estilizada rodando dentro do container Docker com NGINX.
 
-📁 Estrutura do Projeto
-pgsql
-Copiar
-Editar
+---
+
+## 📁 Estrutura do Projeto
+
+```plaintext
 .
 ├── index.html
 ├── style.css
@@ -77,6 +90,11 @@ Editar
 ├── assets/
 │   └── img1.png (opcional)
 └── README.md
-👨‍💻 Autor
-Atividade realizada por [Seu Nome]
-Disciplina: Introdução à Tecnologia da Informação
+```
+
+---
+
+## 👨‍💻 Autor
+
+Atividade realizada por **[Seu Nome]**  
+Disciplina: **Introdução à Tecnologia da Informação**
