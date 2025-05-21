@@ -96,5 +96,5 @@ Você verá a página HTML estilizada rodando dentro do container Docker com NGI
 
 ## 👨‍💻 Autor
 
-Atividade realizada por **[Seu Nome]**  
+Atividade realizada por **Robson Milioli**  
 Disciplina: **Introdução à Tecnologia da Informação**
